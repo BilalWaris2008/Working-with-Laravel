@@ -8,20 +8,20 @@
 
         <div class="carousel-item active">
             <img src="https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822_1280.jpg" class="d-block w-100 slider-img">
-            <div class="carousel-caption text-center">
+            <div class="carousel-caption text-center d-flex flex-column justify-content-center align-items-center h-100">
                 <h1 class="fw-bold">Manage Vouchers Easily</h1>
                 <p class="lead">Fast, secure and modern system for your business</p>
-                <a href="/voucher" class="btn btn-primary btn-lg mt-2">Get Started</a>
+                <a href="/voucher" class="btn btn-dark get-started-btn btn-lg mt-2">Get Started</a>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Features -->
-<section class="py-5 bg-light">
+<section class="py-5 bg-light"  id="features">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="fw-bold">Features</h2>
+            <h2 class="fw-bold mt-2">Features</h2>
             <p class="text-muted">Everything you need in one system</p>
         </div>
 

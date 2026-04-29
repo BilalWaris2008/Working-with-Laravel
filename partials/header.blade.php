@@ -19,13 +19,13 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="#features">
                         <i class="fas fa-star me-1"></i> Features
                     </a>
                 </li>
 
                 <li class="nav-item ms-3">
-                    <a href="/voucher" class="btn btn-primary px-4">
+                    <a href="/voucher" class="btn btn-light custom-btn">
                         <i class="fas fa-plus me-1"></i> Create
                     </a>
                 </li>
