@@ -67,7 +67,7 @@
 }
 
 .navbar .nav-link:hover {
-    color: #0d6efd;
+    transform: scale(1.05);
 }
 
 /* Footer */
@@ -105,4 +105,21 @@
 .social-icon:hover {
     background: #0d6efd;
     transform: translateY(-5px);
+}
+
+.custom-btn {
+    font-weight: 600;
+    padding: 4px 16px;
+    transition: 0.3s;
+}
+
+.get-started-btn {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: black;
+    transform: scale(1.05);
 }
