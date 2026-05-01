@@ -1,11 +1,11 @@
-<footer class="footer-dark text-white pt-5 pb-3 mt-5">
+<footer class="footer-dark text-dark pt-5 pb-3 mt-5">
     <div class="container">
         <div class="row">
 
             <!-- Brand -->
             <div class="col-md-4 mb-4">
                 <h5 class="fw-bold">
-                    <i class="fas fa-ticket-alt me-2"></i> VoucherSys
+                    <i class="fas fa-ticket-alt me-2"></i> VoucherSystem
                 </h5>
                 <p>
                     Smart voucher management system for modern businesses.
@@ -39,7 +39,7 @@
 
         <div class="text-center">
             <p class="mb-0">
-                © {{ date('Y') }} VoucherSys | Made with ❤️ using Bootstrap
+                © {{ date('Y') }} VoucherSystem | Made with ❤️ using Bootstrap
             </p>
         </div>
     </div>
