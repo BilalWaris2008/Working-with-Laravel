@@ -6,132 +6,25 @@
     <meta charset="UTF-8">
     <title>Generate Voucher</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-        }
+     <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        body {
-            height: 100vh;
-            background: #f5f7fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #212529;
-        }
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-        .container {
-            width: 85%;
-            max-width: 1100px;
-        }
-
-        .card {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 14px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-        }
-
-        .card h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            position: relative;
-        }
-
-        .card h2::after {
-            content: '';
-            width: 90px;
-            height: 3px;
-            background: #0d6efd;
-            display: block;
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        .row {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 18px;
-            flex-wrap: wrap;
-        }
-
-        .input-group {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .input-group.full {
-            flex: 2;
-        }
-
-        label {
-            font-size: 13px;
-            margin-bottom: 6px;
-            color: #6c757d;
-        }
-
-        input,
-        select {
-            padding: 11px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            background: #f8f9fa;
-            transition: 0.3s;
-            font-size: 14px;
-        }
-
-        input:focus,
-        select:focus {
-            border-color: #0d6efd;
-            background: #fff;
-            box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
-            outline: none;
-        }
-
-        .btn {
-            width: 100%;
-            padding: 13px;
-            border: none;
-            border-radius: 10px;
-            background: #306fcd;
-            color: #fff;
-            font-size: 15px;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: 0.3s ease;
-            letter-spacing: 0.5px;
-        }
-
-        .btn:hover {
-            background: #0b5ed7;
-            transform: scale(1.02);
-        }
-
-        /* responsive */
-        @media(max-width: 768px) {
-            .row {
-                flex-direction: column;
-            }
-        }
-    </style>
-
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">]
+    <link rel="stylesheet" href="{{ asset('css/voucher.css') }}">
+  
 </head>
+
+
+
+@include('partials.header')
 
 <body>
 
-    <div class="container">
+    <div class="voucher-container">
         <div class="card">
             <h2>GENERATE YOUR VOUCHER</h2>
 
@@ -199,5 +92,7 @@
     </div>
 
 </body>
+
+@include('partials.footer')
 
 </html>
