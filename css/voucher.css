@@ -1,115 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-        }
+body {
+    height: 100vh;
+    background: #f5f7fa;
+    color: #212529;
+}
 
-        body {
-            height: 100vh;
-            background: #f5f7fa;
-            color: #212529;
-        }
+.main {
+    width: 100%;
+    height: 100vh;
+}
 
-        .voucher-container {
-            width: 85%;
-            max-width: 1100px;
-        }
+.container {
+    width: 85%;
+    max-width: 1100px;
+}
 
-        .card {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 14px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            transition: 0.3s;
-        }
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
 
-        .card:hover {
-            transform: translateY(-3px);
-        }
+.card:hover {
+    transform: translateY(-3px);
+}
 
-        .card h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            position: relative;
-        }
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+}
 
-        .card h2::after {
-            content: '';
-            width: 90px;
-            height: 3px;
-            background: #0d6efd;
-            display: block;
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
+.card h2::after {
+    content: '';
+    width: 90px;
+    height: 3px;
+    background: #0d6efd;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
 
-        .row {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 18px;
-            flex-wrap: wrap;
-        }
+.rows {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
 
-        .input-group {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
-        .input-group.full {
-            flex: 2;
-        }
+.input-group.full {
+    flex: 2;
+}
 
-        label {
-            font-size: 13px;
-            margin-bottom: 6px;
-            color: #6c757d;
-        }
+label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #6c757d;
+}
 
-        input,
-        select {
-            padding: 11px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            background: #f8f9fa;
-            transition: 0.3s;
-            font-size: 14px;
-        }
+input,
+select {
+    padding: 11px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #f8f9fa;
+    transition: 0.3s;
+    font-size: 14px;
+}
 
-        input:focus,
-        select:focus {
-            border-color: #0d6efd;
-            background: #fff;
-            box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
-            outline: none;
-        }
+input:focus,
+select:focus {
+    border-color: #0d6efd;
+    background: #fff;
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
+    outline: none;
+}
 
-        .btn {
-            width: 100%;
-            padding: 13px;
-            border: none;
-            border-radius: 10px;
-            background: #306fcd;
-            color: #fff;
-            font-size: 15px;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: 0.3s ease;
-            letter-spacing: 0.5px;
-        }
+.voucherbtn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #306fcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+    letter-spacing: 0.5px;
+}
 
-        .btn:hover {
-            background: #0b5ed7;
-            transform: scale(1.02);
-        }
+.voucherbtn:hover {
+    background: #0b5ed7;
+    transform: scale(1.02);
+}
 
-        /* responsive */
-        @media(max-width: 768px) {
-            .row {
-                flex-direction: column;
-            }
-        }
+/* responsive */
+@media(max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}

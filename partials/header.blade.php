@@ -13,13 +13,13 @@
             <ul class="navbar-nav ms-auto align-items-center">
 
                 <li class="nav-item">
-                    <a class="nav-link active text-dark" href="#">
+                    <a class="nav-link active text-dark" href="/">
                         <i class="fas fa-home me-1"></i> Home
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="#features">
+                    <a class="nav-link text-dark" href="/#features">
                         <i class="fas fa-star me-1"></i> Features
                     </a>
                 </li>
