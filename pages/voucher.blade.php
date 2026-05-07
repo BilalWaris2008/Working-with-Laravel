@@ -33,43 +33,38 @@
 
                     <div class="rows">
                         <div class="input-group">
-                            <label>Receipt No.</label>
-                            <input type="text" placeholder="Enter Receipt No">
-                        </div>
-
-                        <div class="input-group">
                             <label>Student ID</label>
-                            <input type="text" placeholder="Enter Student ID">
+                            <input type="text" name="studentid" placeholder="Enter Student ID" required>
                         </div>
 
                         <div class="input-group">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Enter Full Name">
+                            <input type="text" name="fullname" placeholder="Enter Full Name" required>
                         </div>
 
                         <div class="input-group">
                             <label>Phone Number</label>
-                            <input type="text" placeholder="Enter Phone Number">
+                            <input type="text" name="number" placeholder="Enter Phone Number">
                         </div>
                     </div>
 
                     <div class="rows">
                         <div class="input-group full">
                             <label>Address</label>
-                            <input type="text" placeholder="Enter Address">
+                            <input type="text" name="address" placeholder="Enter Address">
                         </div>
 
                         <div class="input-group">
                             <label>Date</label>
-                            <input type="date">
+                            <input type="date" name="date" required>
                         </div>
 
                         <div class="input-group">
                             <label>Payment Method</label>
-                            <select>
-                                <option>Cash</option>
-                                <option>Card</option>
-                                <option>Online</option>
+                            <select name="paymentmethod" required>
+                                <option value="cash">Cash</option>
+                                <option value="online">Online</option>
+                                <option value="cheque">Cheque</option>
                             </select>
                         </div>
                     </div>
@@ -77,16 +72,16 @@
                     <div class="rows">
                         <div class="input-group">
                             <label>Transaction ID</label>
-                            <input type="text" placeholder="Enter Transaction ID">
+                            <input type="text" name="paymentid" required>
                         </div>
 
                         <div class="input-group">
                             <label>Amount</label>
-                            <input type="number" placeholder="Enter Amount">
+                            <input type="number" name="amount" placeholder="Enter Amount" required>
                         </div>
                     </div>
 
-                    <button type="submit" class="voucherbtn">Generate Voucher</button>
+                    <button type="submit" name="submit" class="voucherbtn">Generate Voucher</button>
                 </form>
             </div>
         </div>
